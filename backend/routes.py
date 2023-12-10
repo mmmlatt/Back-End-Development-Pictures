@@ -74,7 +74,7 @@ def update_picture(id):
     for index, picture in enumerate(data):
         if picture["id"] == picture_data["id"] & id == picture["id"]:
             data[index] = picture_data
-            return {"message": "Picture updated"}
+            return picture_data
     return {"message": "picture not found"}, 404
 
             
